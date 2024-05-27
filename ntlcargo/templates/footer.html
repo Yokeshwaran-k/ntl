@@ -1,0 +1,27 @@
+<!-- footer.html -->
+<footer class="footer mt-5">
+    <div class="container">
+       <div class="col-lg-4">
+        <h3>Our Address</h3>
+        <P>Lorem Ipsum is simply dummy</P>
+        <P>Lorem Ipsum is simply dummy</P>
+        <P>Lorem Ipsum is simply dummy</P>
+       </div>
+       <div class="col-lg-4"></div>
+       <div class="col-lg-4"></div>
+    </div>
+</footer>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+</script>
