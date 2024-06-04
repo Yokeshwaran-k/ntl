@@ -1,0 +1,124 @@
+.header{
+    position: fixed;
+    background-color: transparent;
+    z-index: 5;
+    padding: 20px;
+}
+a.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+    color: #fff !important;
+}
+.navbar-brand img{
+    width: 350px;
+    height: auto;
+}
+a.navbar-brand:hover {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 4px 17px grey;
+    transition: 0.5s;
+}
+.sticky {
+    position: fixed;
+    padding: 15px;
+    box-shadow: 0px 4px 9px #8b8787e8;
+    background-color: #072146 !important;
+}
+.img-holder img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.carousel-inner.homeslider {
+    height: 600px;
+}
+.footer {
+    background-color: #072146;
+    padding: 65px 10px;
+    color: #fff;
+}
+.nav-link{
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+li.nav-item:hover {
+   color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: #fff;
+}
+.sticky .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link, .sticky .navbar-light .navbar-nav .nav-link  {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+    border-bottom: 3px solid red;
+}
+.sticky .nav-link:hover{
+    color:#fff;
+}
+.sticky a.navbar-brand{
+    color:#000 !important;
+}
+.sticky .navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.footer-logo img{
+    width: 400px;
+    height: auto;
+}
+.enquiry-cnt{
+    list-style: none;
+    padding-left: 0;
+}
+.enquiry-cnt li {
+    padding: 5px 0px 9px 0px;
+}
+.enquiry-cnt span {
+    padding: 0px 0px 0px 15px;
+}
+.enquiry-cnt a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-addr p{
+    margin-top: 10px;
+}
+.home-banner-cnt {
+    position: absolute;
+    top: 45%;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.inner-text .text-uppercase {
+    color: #58caff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.inner-text .sub-text {
+    font-size: 18px;
+}
+.inner-text h2 {
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+.banner-text {
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    left: 10%;
+}
+.banner-text h2 {
+    font-size: 45px;
+}
