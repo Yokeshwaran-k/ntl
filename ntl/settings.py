@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2-itrop+g5&3)68oemtjj33wyieey^rl8^+a6b#lr^wnul%=5u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.elasticbeanstalk.com']
 
 
 # Application definition
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'ntl.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ntl_cargo',
+        'NAME': 'ntl_haulage',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': '',
