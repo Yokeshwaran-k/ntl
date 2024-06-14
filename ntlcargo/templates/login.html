@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}Login page{% endblock %}
+{% block content %}
+<div class="page-cnt">
+    <div class="about-banner">
+    <img src ="{% static 'images/AImage02.jpg' %}"/>
+    </div>
+<form method="post">
+    {% csrf_token %}
+    <div class="login_form">
+    <input type="text" name="username" placeholder="Enter User Name.."/>
+    <input type="password" name="password" placeholder="Enter Password.."/>
+    <button type="submit">Login</button>
+    </div>
+</form>
+</div>
+{% endblock %}
