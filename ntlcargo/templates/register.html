@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}Login page{% endblock %}
+{% block content %}
+<style>
+    .header {
+    position: relative;
+    background-color: #072146;
+}
+</style>
+<form class="register_form" method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="group button-group">
+        <button type="submit" class="signup-btn">Sign Up</button>
+    </div>
+</form>
+ 
+<!--<div class="page-cnt">
+    <div class="container login_form mt-5" id="Login_form">
+        <div class="form-container  sign-up-containe">
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="login_header">Sign Up</div>
+            <div class="social__media__container">
+                
+                <a href="#" class="social google">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/zaur.suleymnv/"  target="_blank" class="social instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+              <span class="under__social">
+                 <a href="#" class="link signin-link">or use your email for registration
+                </a>
+            </span>
+            
+            <div class="button-input-group">
+                <div class="group input-group">
+                <input type="text" placeholder="Name" name="reg_username" required>
+            </div>
+            <div class="group input-group">
+                <input type="email" placeholder="Email" name="reg_email" required>
+            </div>
+            <div class="group input-group">
+                <input type="password" placeholder="Password" name="reg_password" required pattern=".{8,}">
+            </div>
+            <div class="alert-text signup__alert">
+                <span class="help__text">At least 8 character</span>
+            </div>
+            <div class="group button-group">
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</div>-->
+{% endblock %}

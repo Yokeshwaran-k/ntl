@@ -25,4 +25,16 @@ owl.owlCarousel({
     $(document).ready(function(){
       $('.inner-text').hide().fadeIn(2000);
     });
+
+const signUpButton = document.getElementById("signUp");
+const signInButton = document.getElementById("signIn");
+const container = document.getElementById("Login_form");
+
+signUpButton.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
     
