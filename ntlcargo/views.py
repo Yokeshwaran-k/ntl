@@ -3,6 +3,8 @@ from django.shortcuts import  render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.forms import inlineformset_factory
 from .forms import  CreateUserForm
+from django.contrib.auth.models import User
+
 
 def home(request):
     return render(request, "index.html")
@@ -17,12 +19,15 @@ def login(request):
     return render(request, "login.html")
 
 def register(request):
+    #formdata = CreateUserForm.Meta()
+    #print(formdata.)
     if request.method == 'POST':
         name = request.POST["username"]
         email = request.POST["email"]
         password1 = request.POST["password1"]
         password2 = request.POST["password2"]
-
+        emaildb = User.objects.get(id=2)
+        
         if password1 == password2:
             user = User.objects.create_user(username = name, email = email, password = password1)
             user.save()

@@ -8,21 +8,29 @@
     background-color: #072146;
 }
 </style>
-<form class="register_form" method="POST" action="">
+<!--<form class="register_form" method="POST" action="">
     {% csrf_token %}
     {{ form.as_p }}
     <div class="group button-group">
         <button type="submit" class="signup-btn">Sign Up</button>
     </div>
-</form>
+</form>-->
  
-<!--<div class="page-cnt">
+<div class="page-cnt">
     <div class="container login_form mt-5" id="Login_form">
         <div class="form-container  sign-up-containe">
         <form action="#" method="POST">
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <lp class="{{ message.tags }}">{{ message }}</p>
+                {% endfor %}
+
+            </div>
+            {% endif %}
             {% csrf_token %}
             <div class="login_header">Sign Up</div>
-            <div class="social__media__container">
+            <!--<div class="social__media__container">
                 
                 <a href="#" class="social google">
                     <i class="fa-brands fa-google"></i>
@@ -34,17 +42,20 @@
               <span class="under__social">
                  <a href="#" class="link signin-link">or use your email for registration
                 </a>
-            </span>
+            </span>-->
             
             <div class="button-input-group">
                 <div class="group input-group">
-                <input type="text" placeholder="Name" name="reg_username" required>
+                <input type="text" placeholder="Name" name="username" required>
             </div>
             <div class="group input-group">
-                <input type="email" placeholder="Email" name="reg_email" required>
+                <input type="email" placeholder="Email" name="email" required>
             </div>
             <div class="group input-group">
-                <input type="password" placeholder="Password" name="reg_password" required pattern=".{8,}">
+                <input type="password" placeholder="Password" name="password1" required pattern=".{8,}">
+            </div>
+            <div class="group input-group">
+                <input type="password" placeholder="Password" name="password2" required pattern=".{8,}">
             </div>
             <div class="alert-text signup__alert">
                 <span class="help__text">At least 8 character</span>
@@ -57,5 +68,5 @@
         </form>
     </div>
 </div>
-</div>-->
+</div>
 {% endblock %}
